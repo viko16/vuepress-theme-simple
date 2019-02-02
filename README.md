@@ -1,7 +1,7 @@
 # vuepress-theme-simple
 
 [![npm](https://img.shields.io/npm/v/vuepress-theme-simple.svg)](https://www.npmjs.com/package/vuepress-theme-simple)
-[![LICENSE](https://img.shields.io/npm/l/vuepress-theme-simple.svg)](https://github.com/sqrthree/vuepress-theme-simple/blob/master/LICENSE)
+[![LICENSE](https://img.shields.io/npm/l/vuepress-theme-simple.svg)](https://github.com/viko16/vuepress-theme-simple/blob/master/LICENSE)
 [![Dependency Status](https://david-dm.org/viko16/vuepress-theme-simple.svg?theme=shields.io)](https://david-dm.org/viko16/vuepress-theme-simple)
 
 > ✏️ Very simple blog theme for VuePress.
