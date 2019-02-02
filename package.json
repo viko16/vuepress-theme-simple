@@ -1,11 +1,20 @@
 {
   "name": "vuepress-theme-simple",
+  "description": "✏️ simple blog theme for VuePress",
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "release": "npm run lint && standard-version && npm publish"
   },
+  "keywords": [
+    "vuepress",
+    "vuepress-theme",
+    "blog-theme"
+  ],
+  "author": "viko16 <16viko@gmail.com>",
+  "repository": "viko16/vuepress-theme-simple",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^5.13.0",
     "eslint-plugin-vue": "^5.1.0",
