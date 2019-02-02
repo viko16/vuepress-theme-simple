@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "npm run lint && standard-version && npm publish"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
-    "eslint-plugin-vue": "^5.1.0"
+    "eslint-plugin-vue": "^5.1.0",
+    "standard-version": "^4.4.0"
   },
   "dependencies": {
     "@vuepress/plugin-last-updated": "^1.0.0-alpha.0",
