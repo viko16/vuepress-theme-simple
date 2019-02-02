@@ -1,0 +1,12 @@
+{
+  "name": "vuepress-theme-simple",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-plugin-vue": "^5.1.0"
+  }
+}
