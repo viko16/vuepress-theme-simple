@@ -1,0 +1,214 @@
+@import '~prismjs/themes/prism.css'
+
+//
+// Variable
+// -----------------------------------------
+
+fontSize = 14px
+
+fontFamily = "Source Sans Pro", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif
+monospaceFontFamily = "Ubuntu Mono" ,"PT Mono", Consolas, Monaco, Menlo, monospace
+
+bgColor = #fff
+textColor = #555
+linkColor = #08c
+metaColor = #888
+codeBgColor = #f7f7f7
+
+//
+// Common
+// -----------------------------------------
+
+/::-moz-selection,
+/::selection
+  background #B2D7FF
+
+body
+  // font
+  font-family fontFamily
+  font-size fontSize
+  line-height 2
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  -webkit-text-size-adjust none
+  // size
+  position relative
+  max-width 700px
+  margin 0 auto
+  padding 0
+  background bgColor
+  color textColor
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight 400
+  position relative
+
+a
+  text-decoration none
+  color linkColor
+  overflow-wrap break-word
+  word-break break-all
+
+//
+// Shared
+// -----------------------------------------
+
+.header
+  margin 50px auto
+  text-align center
+  a
+    font-size fontSize + 2
+    letter-spacing 5px
+    text-transform uppercase
+    color textColor
+
+.searchbar-input
+  display block
+  margin 5px auto 0
+  width 150px
+  font-family fontFamily
+  font-size fontSize
+  text-align center
+  line-height 1.5
+  border none
+  background-color bgColor
+  color metaColor
+  &:hover,
+  &:focus,
+  &:active
+    outline none
+    background-color darken(bgColor, 2)
+    text-decoration none
+    color textColor
+
+.footer
+  margin-bottom 15px
+  text-align center
+  color metaColor
+  a
+    color metaColor
+    text-decoration underline
+
+//
+// List View
+// -----------------------------------------
+
+.list-view
+  margin 0 20px
+  ol,
+  ul
+    padding 0
+    list-style none
+
+.list-item
+  position relative
+  margin-bottom 50px
+
+.item-title
+  display inline-block
+  margin-bottom 10px
+  font-size fontSize + 2
+  color textColor
+  &:hover
+    color linkColor
+
+.item-date
+  display inline-block
+  font-size fontSize - 2
+  color metaColor
+  border-top 1px solid #ddd
+  padding-top 12px
+
+//
+// Post View
+// -----------------------------------------
+
+.post-view
+  margin 0 20px 50px
+  // overflow-x hidden
+  a.header-anchor
+    position absolute
+    left -30px
+    width 30px
+    text-align center
+    visibility hidden
+
+  h1:hover a.header-anchor,
+  h2:hover a.header-anchor,
+  h3:hover a.header-anchor,
+  h4:hover a.header-anchor,
+  h5:hover a.header-anchor,
+  h6:hover a.header-anchor
+    visibility visible
+
+  a[href]:not(.header-anchor)
+    position relative
+    &:hover
+      border-bottom 1px dashed linkColor
+    // thanks longsien/BareCSS
+    // https://github.com/longsien/BareCSS/blob/v1.1.0/less/_tooltip.less
+    &:after
+      content attr(href)
+      position absolute
+      left 50%
+      top 0
+      visibility hidden
+      pointer-events none
+      transform translate(-50%, -95%)
+      transition all 0.1s ease-in-out
+      overflow visible
+      padding 0 10px
+      background #454f54
+      font-size 0.8em
+      border-radius 5px
+      color #ffffff
+      line-height 2
+      white-space nowrap
+      opacity 0.9
+    &:hover:after
+      visibility visible
+      transform translate(-50%, calc(-100% - 5px))
+
+.post-title
+  font-size fontSize * 2
+  margin-bottom 50px
+  line-height 1
+
+// when smaller than tablet
+@media (max-width: 767px)
+  .post-title
+    font-size 1.5em
+
+.post-date
+  float right
+  font-size fontSize - 2
+  font-weight 400
+  line-height 2
+  color metaColor
+
+code
+  background codeBgColor
+  font-family monospaceFontFamily !important
+  padding 0 5px
+
+blockquote
+  margin 0
+  padding 0 16px
+  border-left 4px solid #ddd
+
+//
+// Override prism
+// -----------------------------------------
+
+code[class*="language-"],
+pre[class*="language-"]
+  color textColor
+  background codeBgColor
+  padding 16px
+  font-family monospaceFontFamily !important
+

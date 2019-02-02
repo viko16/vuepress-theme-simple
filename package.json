@@ -8,5 +8,10 @@
   "devDependencies": {
     "eslint": "^5.13.0",
     "eslint-plugin-vue": "^5.1.0"
+  },
+  "dependencies": {
+    "@vuepress/plugin-last-updated": "^1.0.0-alpha.0",
+    "prismjs": "^1.15.0",
+    "timeago.js": "^4.0.0-beta.2"
   }
 }

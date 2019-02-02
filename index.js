@@ -1,1 +1,3 @@
-// required by VuePress theme rules, but nothing here.
+module.exports = {
+  plugins: ['@vuepress/last-updated']
+}
