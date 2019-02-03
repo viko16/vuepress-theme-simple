@@ -4,7 +4,7 @@
 [![LICENSE](https://img.shields.io/npm/l/vuepress-theme-simple.svg)](https://github.com/viko16/vuepress-theme-simple/blob/master/LICENSE)
 [![Dependency Status](https://david-dm.org/viko16/vuepress-theme-simple.svg?theme=shields.io)](https://david-dm.org/viko16/vuepress-theme-simple)
 
-> ✏️ Very simple blog theme for VuePress.
+> ✏️ Very Simple Blog Theme for VuePress.
 
 ![preview](https://user-images.githubusercontent.com/5064777/52162728-51198680-2713-11e9-9546-e737600be782.png)
 
@@ -23,6 +23,9 @@ module.exports = {
   theme: 'simple',
 }
 ```
+
+- No Configuration.
+- `{post-path}/README.md` content will **override** by this theme, and `/` will show posts list as screenshot.
 
 ## License
 
