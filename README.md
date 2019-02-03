@@ -8,10 +8,17 @@
 
 ![preview](https://user-images.githubusercontent.com/5064777/52162728-51198680-2713-11e9-9546-e737600be782.png)
 
+## Features
+- 💡 No Configuration.
+- 🖼️ `/README.md` content will be **IGNORE** by this theme, and replace with posts list as screenshot.
+- 📅 The list of posts is sorted by the following two fields:
+  - `lastUpdated` based Git Commit **(Default)** - [Detail](https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated)
+  - `date` field in FrontMatter **(Higher Priority)** - [Detail](https://vuepress.vuejs.org/guide/frontmatter.html)
+
 ## Installation
 
 ```shell
-$ npm install vuepress-theme-simple --save
+$ npm install vuepress-theme-simple --save-dev
 ```
 
 ## Usage
@@ -23,9 +30,6 @@ module.exports = {
   theme: 'simple',
 }
 ```
-
-- No Configuration.
-- `{post-path}/README.md` content will **override** by this theme, and `/` will show posts list as screenshot.
 
 ## License
 
