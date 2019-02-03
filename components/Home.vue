@@ -1,6 +1,15 @@
 <template>
   <div class="list-view">
-    <ol class="list">
+    <div
+      v-if="filteredList.length === 0"
+      class="empty-list"
+    >
+      Ooops! Nothing here..🙈
+    </div>
+    <ol
+      v-else
+      class="list"
+    >
       <li
         v-for="page of filteredList"
         :key="page.key"
