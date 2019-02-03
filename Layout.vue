@@ -1,7 +1,10 @@
 <template>
-  <div class="theme-container">
+  <div class="theme-container vuepress-theme-simple">
     <header class="header">
-      <router-link to="/">
+      <router-link
+        to="/"
+        :title="$description"
+      >
         {{ $site.title }}
       </router-link>
       <div style="clear: both" />
@@ -25,7 +28,7 @@ export default {
   },
   computed: {
     isHome() {
-      return this.$page.path === "/";
+      return this.$page.path === '/';
     }
   }
 };
