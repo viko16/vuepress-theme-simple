@@ -8,7 +8,7 @@
 
 ![preview](https://user-images.githubusercontent.com/5064777/52162728-51198680-2713-11e9-9546-e737600be782.png)
 
-Demo: [My Personal Blog](https://ukn.me) ([Source](https://github.com/viko16/vuepress-blog))
+Demo: [My Personal Blog](https://ukn.me/) ([Source](https://github.com/viko16/vuepress-blog))
 
 ## Features
 - 💡 No Configuration.
@@ -19,8 +19,12 @@ Demo: [My Personal Blog](https://ukn.me) ([Source](https://github.com/viko16/vue
 
 ## Installation
 
+> Note: Work For VuePress 1.x
+
 ```shell
 $ npm install vuepress-theme-simple --save-dev
+# or
+$ yarn add vuepress-theme-simple --dev
 ```
 
 ## Usage
