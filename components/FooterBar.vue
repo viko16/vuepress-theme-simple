@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    Copyright © {{ thisYear }} | Powered by
+    Copyright © {{ thisYear }} <br>Powered by
     <a
       href="https://vuepress.vuejs.org/"
       rel="noopener"
@@ -14,7 +14,7 @@
       rel="noopener"
       target="_blank"
     >
-      vuepress-theme-simple
+      Simple
     </a>
   </footer>
 </template>
