@@ -1,12 +1,14 @@
 <template>
   <section class="post-view">
-    <h1 class="post-title">
-      {{ $page.title }}
+    <div class="post-head">
+      <h1 class="post-title">
+        {{ $page.title }}
+      </h1>
       <time-ago
         :last-updated="$page.frontmatter.date || $page.lastUpdated"
         class="post-date"
       />
-    </h1>
+    </div>
     <Content />
   </section>
 </template>
