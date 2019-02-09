@@ -3,22 +3,19 @@
 //
 // Variable
 // -----------------------------------------
-
 fontSize = 14px
-
-fontFamily = "Source Sans Pro", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif
-monospaceFontFamily = "Ubuntu Mono" ,"PT Mono", Consolas, Monaco, Menlo, monospace
-
+fontFamily = 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif
+monospaceFontFamily = 'Ubuntu Mono', 'PT Mono', Consolas, Monaco, Menlo, monospace
 bgColor = #fff
 textColor = #555
 linkColor = #08c
 metaColor = #888
 codeBgColor = #f7f7f7
+lineColor = #ddd
 
 //
 // Common
 // -----------------------------------------
-
 /::-moz-selection,
 /::selection
   background #B2D7FF
@@ -57,10 +54,10 @@ a
 //
 // Shared
 // -----------------------------------------
-
 .header
   margin 50px auto
   text-align center
+
   a
     font-size fontSize + 2
     letter-spacing 5px
@@ -78,6 +75,7 @@ a
   border none
   background-color bgColor
   color metaColor
+
   &:hover,
   &:focus,
   &:active
@@ -90,6 +88,7 @@ a
   margin-bottom 15px
   text-align center
   color metaColor
+
   a
     color metaColor
     text-decoration underline
@@ -97,9 +96,9 @@ a
 //
 // List View
 // -----------------------------------------
-
 .list-view
   margin 0 20px
+
   ol,
   ul
     padding 0
@@ -118,6 +117,7 @@ a
   margin-bottom 10px
   font-size fontSize + 2
   color textColor
+
   &:hover
     color linkColor
 
@@ -125,16 +125,16 @@ a
   display inline-block
   font-size fontSize - 2
   color metaColor
-  border-top 1px solid #ddd
+  border-top 1px solid lineColor
   padding-top 12px
 
 //
 // Post View
 // -----------------------------------------
-
 .post-view
   position relative
   margin 0 20px 50px
+
   // overflow-x hidden
   a.header-anchor
     position absolute
@@ -153,8 +153,10 @@ a
 
   a[href]:not(.header-anchor)
     position relative
+
     &:hover
       border-bottom 1px dashed linkColor
+
     // thanks longsien/BareCSS
     // https://github.com/longsien/BareCSS/blob/v1.1.0/less/_tooltip.less
     &:after
@@ -175,6 +177,7 @@ a
       line-height 2
       white-space nowrap
       opacity 0.9
+
     &:hover:after
       visibility visible
       transform translate(-50%, calc(-100% - 5px))
@@ -200,35 +203,32 @@ a
 @media (max-width: 767px)
   .post-title
     font-size fontSize * 1.5
+
   .post-date
     line-height fontSize * 1.5
 
 code
   background codeBgColor
   font-family monospaceFontFamily !important
-  padding 0 5px
 
 blockquote
   margin 0
   padding 0 16px
-  border-left 4px solid #ddd
+  border-left 4px solid lineColor
 
 //
 // 404 View
 // -----------------------------------------
-
 .layout-404
   margin 8em
   text-align center
 
 //
-// Override prism
+// Override Prism
 // -----------------------------------------
-
-code[class*="language-"],
-pre[class*="language-"]
+code[class*='language-'],
+pre[class*='language-']
   color textColor
   background codeBgColor
   padding 16px
   font-family monospaceFontFamily !important
-
