@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import HomePage from "./components/Home";
-import PostPage from "./components/Post";
-import FooterBar from './components/FooterBar';
+import HomePage from "../components/Home";
+import PostPage from "../components/Post";
+import FooterBar from '../components/FooterBar';
 
 export default {
   components: {
