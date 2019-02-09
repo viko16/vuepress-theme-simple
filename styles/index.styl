@@ -51,6 +51,9 @@ a
   overflow-wrap break-word
   word-break break-all
 
+code
+  font-family monospaceFontFamily !important
+
 //
 // Shared
 // -----------------------------------------
@@ -182,6 +185,11 @@ a
       visibility visible
       transform translate(-50%, calc(-100% - 5px))
 
+  code
+    background codeBgColor
+    padding 2px 4px 0
+    border-radius 5px
+
 .post-head
   position relative
 
@@ -206,10 +214,6 @@ a
 
   .post-date
     line-height fontSize * 1.5
-
-code
-  background codeBgColor
-  font-family monospaceFontFamily !important
 
 blockquote
   margin 0
@@ -270,9 +274,29 @@ th
 //
 // Override Prism
 // -----------------------------------------
-code[class*='language-'],
-pre[class*='language-']
-  color textColor
+div[class*='language-']
+  position relative
   background codeBgColor
-  padding 16px
-  font-family monospaceFontFamily !important
+  border-radius 5px
+
+  .highlight-lines
+    position absolute
+    user-select none
+    top 0
+    left 0
+    width 100%
+    line-height 1.5
+    padding 1em 0
+
+    .highlighted
+      background-color #fffbdd
+
+  code
+    padding 0
+    background transparent
+
+  pre[class*='language-']
+    position relative
+    color textColor
+    background-color transparent
+    font-family monospaceFontFamily !important
