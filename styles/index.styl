@@ -216,6 +216,50 @@ blockquote
   padding 0 16px
   border-left 4px solid lineColor
 
+table
+  border-collapse collapse
+
+td,
+th
+  border 1px solid lineColor
+  padding 0.4em 1em
+
+// https://github.com/vuejs/vuepress/blob/v1.0.0-alpha.37/packages/@vuepress/theme-default/styles/custom-blocks.styl
+.custom-block
+  .custom-block-title
+    font-weight 600
+
+  p
+    line-height 1.5
+
+  &.tip,
+  &.warning,
+  &.danger
+    padding 0.1em 1.5em
+    border-left-width 0.5em
+    border-left-style solid
+    margin 1em 0
+
+  &.tip
+    background-color #f3f5f7
+    border-color #42b983
+
+  &.warning
+    background-color rgba(255, 229, 100, 0.3)
+    border-color darken(#ffe564, 35%)
+    color darken(#ffe564, 70%)
+
+    .custom-block-title
+      color darken(#ffe564, 50%)
+
+  &.danger
+    background-color #ffe6e6
+    border-color darken(red, 20%)
+    color darken(red, 70%)
+
+    .custom-block-title
+      color darken(red, 40%)
+
 //
 // 404 View
 // -----------------------------------------
