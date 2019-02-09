@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/viko16/vuepress-theme-simple/compare/v0.4.0...v0.5.0) (2019-02-09)
+
+
+### Features
+
+* add 404 layout ([4003576](https://github.com/viko16/vuepress-theme-simple/commit/4003576))
+* support code block highlight line style ([6e849b6](https://github.com/viko16/vuepress-theme-simple/commit/6e849b6))
+* support custom-block style ([3d45d70](https://github.com/viko16/vuepress-theme-simple/commit/3d45d70))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/viko16/vuepress-theme-simple/compare/v0.3.0...v0.4.0) (2019-02-07)
 
