@@ -77,7 +77,7 @@ code
   text-align center
 
   .site-name
-    font-size fontSize + 2
+    font-size fontSize + 30
     letter-spacing 5px
     text-transform uppercase
     color textColor
@@ -86,9 +86,13 @@ code
     margin 10px 10px 0
 
   .navbar-item
+    font-size fontSize + 2
     margin-right 10px
     color metaColor
     text-decoration underline
+    
+    &:hover
+      color linkColor
 
 .searchbar-input
   display block
@@ -151,8 +155,10 @@ code
 .item-title
   display inline-block
   margin-bottom 10px
-  font-size fontSize + 2
+  font-size fontSize + 4
   color textColor
+  font-weight 600;
+  line-height 1.25;
 
   &:hover
     color linkColor
