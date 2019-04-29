@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.1](https://github.com/viko16/vuepress-theme-simple/compare/v0.6.0...v0.6.1) (2019-04-29)
+
+
+### Bug Fixes
+
+* add max-width for images ([4023c92](https://github.com/viko16/vuepress-theme-simple/commit/4023c92))
+
+
+
 # [0.6.0](https://github.com/viko16/vuepress-theme-simple/compare/v0.5.0...v0.6.0) (2019-04-29)
 
 
