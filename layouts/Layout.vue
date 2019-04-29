@@ -4,13 +4,15 @@
       <router-link
         to="/"
         :title="$description"
+        class="site-name"
       >
         {{ $site.title }}
       </router-link>
       <div style="clear: both" />
+      <nav-bar />
     </header>
-    <HomePage v-if="isHome" />
-    <PostPage v-else />
+    <home-page v-if="isHome" />
+    <post-page v-else />
     <footer-bar />
   </div>
 </template>
@@ -19,12 +21,14 @@
 import HomePage from "../components/Home";
 import PostPage from "../components/Post";
 import FooterBar from '../components/FooterBar';
+import NavBar from '../components/NavBar';
 
 export default {
   components: {
     HomePage,
     PostPage,
     FooterBar,
+    NavBar,
   },
   computed: {
     isHome() {
