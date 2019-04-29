@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.6.0](https://github.com/viko16/vuepress-theme-simple/compare/v0.5.0...v0.6.0) (2019-04-29)
+
+
+### Features
+
+* add author info ([10fd13f](https://github.com/viko16/vuepress-theme-simple/commit/10fd13f))
+* add navbar support (close [#1](https://github.com/viko16/vuepress-theme-simple/issues/1)) ([16039cb](https://github.com/viko16/vuepress-theme-simple/commit/16039cb))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/viko16/vuepress-theme-simple/compare/v0.4.0...v0.5.0) (2019-02-09)
 
