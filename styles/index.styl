@@ -324,3 +324,18 @@ div[class*='language-']
     color textColor
     background-color transparent
     font-family monospaceFontFamily !important
+
+.line-numbers-mode
+  .line-numbers-wrapper
+    position absolute
+    top 1em
+    left 0.5em
+    padding-right 0.5em
+    min-width 1.5em
+    color rgba(textColor, 0.4)
+    text-align right
+    line-height 1.5
+    user-select none
+
+  pre[class*='language-']
+    padding-left 3.5em
