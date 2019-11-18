@@ -3,6 +3,9 @@
   "description": "✏️ Very Simple Blog Theme for VuePress",
   "version": "0.7.0",
   "main": "index.js",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
+  },
   "scripts": {
     "lint": "eslint .",
     "release": "npm run lint && standard-version && npm publish"
