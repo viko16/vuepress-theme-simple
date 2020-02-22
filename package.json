@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "vuepress dev example",
     "lint": "eslint .",
     "release": "npm run lint && standard-version && npm publish"
   },
@@ -23,6 +24,7 @@
   "dependencies": {
     "@vuepress/plugin-last-updated": "^1.2.0",
     "prismjs": "^1.19.0",
-    "timeago.js": "^4.0.2"
+    "timeago.js": "^4.0.2",
+    "vuepress": "^1.3.1"
   }
 }
