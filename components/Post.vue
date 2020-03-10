@@ -1,5 +1,6 @@
 <template>
   <section class="post-view">
+    <router-link to="/">Back</router-link>
     <div class="post-head">
       <h1 class="post-title">
         {{ $page.title }}
