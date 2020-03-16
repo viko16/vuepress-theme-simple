@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/viko16/vuepress-theme-simple/compare/v1.0.0...v1.1.0) (2020-03-16)
+
+
+### Features
+
+* formatDate() use full date ([cfab629](https://github.com/viko16/vuepress-theme-simple/commit/cfab62983fcfb22f547a86582ac08ed3753fb9a9))
+
+
+### Bug Fixes
+
+* 404 page style (close [#6](https://github.com/viko16/vuepress-theme-simple/issues/6)) ([58d8a62](https://github.com/viko16/vuepress-theme-simple/commit/58d8a627dfa76b362afedded791b47b5d1e68811))
+
 ## [1.0.0](https://github.com/viko16/vuepress-theme-simple/compare/v0.7.0...v1.0.0) (2020-01-21)
 
 ## [0.7.0](https://github.com/viko16/vuepress-theme-simple/compare/v0.6.1...v0.7.0) (2019-05-20)
