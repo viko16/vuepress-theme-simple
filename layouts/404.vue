@@ -4,6 +4,7 @@
       <router-link
         to="/"
         :title="$description"
+        class="site-name"
       >
         {{ $site.title }}
       </router-link>
