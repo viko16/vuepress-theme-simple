@@ -1,5 +1,6 @@
 <template>
   <div class="list-view">
+    <SearchBox id="searchBox" style=""/>
     <div
       v-if="filteredList.length === 0"
       class="empty-list"
@@ -32,7 +33,8 @@
 </template>
 
 <script>
-import TimeAgo from './TimeAgo';
+    import TimeAgo from './TimeAgo';
+    import SearchBox from '@SearchBox';
 
 export default {
   components: {
@@ -50,3 +52,27 @@ export default {
   },
 }
 </script>
+<style scoped>
+  .pageControl {
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+    color: #888;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  button:hover:disabled {
+    cursor: not-allowed;
+  }
+
+</style>

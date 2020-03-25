@@ -6,5 +6,9 @@ module.exports = {
   theme: path.resolve(__dirname, '../../'),
   themeConfig: {
     author: 'viko16',
+    pageSize: 5,
   },
+  plugins: [
+    '@vuepress/search',
+  ],
 }
