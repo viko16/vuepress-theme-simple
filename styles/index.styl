@@ -339,3 +339,36 @@ div[class*='language-']
 
   pre[class*='language-']
     padding-left 3.5em
+
+.icon-night
+  position absolute
+  top -30px
+  right 5px
+  width 32px
+  height 32px
+  display inline-block
+  background-image embedurl('./assets/night.svg', 'utf8')
+  background-repeat no-repeat
+  background-position center
+  background-size 100%
+  vertical-align sub
+
+#searchBox
+  input
+    border-color #b3b3b3
+    border none
+    background-color transparent
+    background-position-x 0
+    border-radius 0
+
+    &:focus
+      border-bottom solid 1px #ddd
+
+  ul
+    border-color #ddd
+    z-index 999
+    left 0
+
+    li
+      a
+        color #888
