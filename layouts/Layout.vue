@@ -31,6 +31,11 @@
             FooterBar,
             NavBar,
         },
+        mounted() {
+            if(localStorage.getItem('nightMode')){
+               this.nightMode();
+            }
+        },
         computed: {
             isHome() {
                 return this.$page.path === '/';
@@ -40,10 +45,12 @@
             nightMode() {
                 var styleElement = document.getElementById('styles_js');
                 if (!styleElement) {
+                    localStorage.setItem('nightMode','true');
                     addNewStyle('body {background-color:white;filter: brightness(90%) invert(100%) hue-rotate(180deg);-webkit-font-smoothing: antialiased;}');
                     addNewStyle('html {background-color:#191919;}');
                     addNewStyle('picture,video,img {filter: hue-rotate(180deg) invert(100%) brightness(111.111%);}');
                 } else {
+                    localStorage.removeItem('nightMode');
                     document.getElementsByTagName('head')[0].removeChild(styleElement);
                 }
 
