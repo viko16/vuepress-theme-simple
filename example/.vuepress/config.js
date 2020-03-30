@@ -8,7 +8,4 @@ module.exports = {
     author: 'viko16',
     pageSize: 5,
   },
-  plugins: [
-    '@vuepress/search',
-  ],
 }
