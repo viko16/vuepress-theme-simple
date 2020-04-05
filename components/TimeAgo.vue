@@ -19,7 +19,7 @@ export default {
       return format(new Date(str), locale)
     },
     formatDate: date => {
-      return new Date(date).toLocaleDateString()
+      return new Date(date).toLocaleString()
     }
   },
   props: {

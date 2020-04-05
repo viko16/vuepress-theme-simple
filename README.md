@@ -50,6 +50,12 @@ module.exports = {
 }
 ```
 
+## Development
+
+```sh
+npm run dev
+```
+
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT) © [viko16](https://github.com/viko16)
