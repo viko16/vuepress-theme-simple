@@ -4,7 +4,7 @@
     :title="lastUpdated | formatDate"
     pubdate="pubdate"
   >
-    {{ lastUpdated | timeago($lang) }}
+    {{ lastUpdated | timeago }}
   </time>
 </template>
 
@@ -13,9 +13,9 @@ import { format } from 'timeago.js';
 
 export default {
   filters: {
-    timeago: (str, lang) => {
+    timeago: (str) => {
       if (!str) return format()
-      const locale = (lang === 'zh-CN') ? 'zh_CN': 'en_US'
+      const locale = navigator.language ? navigator.language.replace('-', '_') : ''
       return format(new Date(str), locale)
     },
     formatDate: date => {
