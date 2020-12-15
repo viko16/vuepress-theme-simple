@@ -1,7 +1,7 @@
 {
   "name": "vuepress-theme-simple",
   "description": "✏️ Very Simple Blog Theme for VuePress",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev example",

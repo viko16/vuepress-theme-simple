@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/viko16/vuepress-theme-simple/compare/v1.1.2...v1.2.0) (2020-12-15)
+
+
+### Features
+
+* use browser language for timeago.js ([533089d](https://github.com/viko16/vuepress-theme-simple/commit/533089dd78fc48be95b7e76cd5bcf54cda2f16b2))
+
 ### [1.1.2](https://github.com/viko16/vuepress-theme-simple/compare/v1.1.1...v1.1.2) (2020-07-14)
 
 ### [1.1.1](https://github.com/viko16/vuepress-theme-simple/compare/v1.1.0...v1.1.1) (2020-03-16)
