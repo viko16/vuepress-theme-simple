@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/viko16/vuepress-theme-simple/compare/v1.2.0...v1.2.1) (2020-12-15)
+
+
+### Bug Fixes
+
+* fix language under node env ([6a6f5b0](https://github.com/viko16/vuepress-theme-simple/commit/6a6f5b05ccb74ce23929d75ef622e250f9f5c03a))
+
 ## [1.2.0](https://github.com/viko16/vuepress-theme-simple/compare/v1.1.2...v1.2.0) (2020-12-15)
 
 
