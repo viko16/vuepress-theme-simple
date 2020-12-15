@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/viko16/vuepress-theme-simple/compare/v1.2.1...v1.2.2) (2020-12-15)
+
+
+### Bug Fixes
+
+* Rollback!!! ([63eebe8](https://github.com/viko16/vuepress-theme-simple/commit/63eebe8c6c4d2bc56f04d9beefca7e3fab8825f8))
+
 ### [1.2.1](https://github.com/viko16/vuepress-theme-simple/compare/v1.2.0...v1.2.1) (2020-12-15)
 
 
