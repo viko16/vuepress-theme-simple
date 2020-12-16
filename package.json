@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@vuepress/plugin-last-updated": "^1.2.0",
+    "@vuepress/plugin-search": "^1.2.0",
     "prismjs": "^1.19.0",
     "timeago.js": "^4.0.2"
   }
