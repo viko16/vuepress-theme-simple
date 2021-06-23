@@ -339,3 +339,17 @@ div[class*='language-']
 
   pre[class*='language-']
     padding-left 3.5em
+
+@media (prefers-color-scheme: dark)
+  body
+    background-color white
+    filter brightness(90%) invert(100%) hue-rotate(180deg)
+    -webkit-font-smoothing antialiased
+
+  html
+    background-color #191919
+
+  picture,
+  video,
+  img
+    filter hue-rotate(180deg) invert(100%) brightness(111.111%)
