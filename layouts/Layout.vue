@@ -30,7 +30,7 @@ export default {
     FooterBar,
     NavBar,
   },
-  computed: {
+  methods: {
     isHome() {
       return this.$page.path === '/';
     }
